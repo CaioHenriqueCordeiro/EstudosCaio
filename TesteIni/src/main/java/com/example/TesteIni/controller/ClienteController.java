@@ -29,7 +29,6 @@ public class ClienteController {
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
 	public Cliente adicionar(@RequestBody Cliente cliente) {
-		//System.out.println("Cliente: <<<<<<<<<<" + client);
 		return clienteRepository.save(cliente);
 	}
 	
